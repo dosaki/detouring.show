@@ -1,0 +1,25 @@
+.tag {
+  margin:0 5px;
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 8px;
+  color: #c27a22;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border:none;
+  outline: none;
+}
+
+.tag:hover {
+  color: #ffffff;
+}
+
+.tag.selected {
+  color: white;
+}
+
+.tag:hover > .tag-name{
+  text-decoration: underline;
+}

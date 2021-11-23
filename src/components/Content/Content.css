@@ -1,0 +1,19 @@
+.content-holder {
+  padding: 8px;
+}
+
+.description {
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  margin:0;
+  padding:0;
+}
+
+.episodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+}

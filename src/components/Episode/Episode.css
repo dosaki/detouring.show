@@ -1,0 +1,39 @@
+.episode {
+  margin-top: 30px;
+  width: 400px;
+  
+  --notchSize: 80px;
+  clip-path: 
+    polygon(
+      0% 0%,
+      calc(100% - var(--notchSize)) 0%,
+      100% var(--notchSize),
+      100% 100%,
+      0% 100%
+    );
+}
+
+.image-area {
+  overflow: hidden;
+}
+
+.info-area {
+  height: 368px;
+  width: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 16px;
+}
+
+.episode h3 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.episode .summary {
+  font-size: 1.1em;
+}
