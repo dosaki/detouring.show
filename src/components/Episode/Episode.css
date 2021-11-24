@@ -7,7 +7,7 @@
   clip-path: 
     polygon(
       0% 0%,
-      calc(100% - var(--notchSize)) 5%,
+      calc(100% - var(--notchSize)) 2%,
       100% var(--notchSize),
       100% 100%,
       var(--hoverNotchSize) 100%,
