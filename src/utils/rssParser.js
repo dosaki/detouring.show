@@ -57,7 +57,7 @@ const parseRss = (rss) => {
         author: removeCDATA(doc.querySelector("channel>author").innerHTML),
         email: doc.querySelector("channel > owner > email").innerHTML,
         episodes,
-        allTags: [...Object.keys(validTags), ...new Set(episodes.map(ep => ep.tags).flat())]
+        allTags: [...new Set(episodes.map(ep => ep.tags).flat())]
     }
 }
 
