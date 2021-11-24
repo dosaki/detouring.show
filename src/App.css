@@ -99,6 +99,7 @@ a.dark:hover {
       50% 100%
   );
   margin-top: -45px;
+  font-weight:bold;
 }
 
 .footer.about {
