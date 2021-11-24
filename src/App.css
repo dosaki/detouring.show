@@ -5,7 +5,6 @@ a {
 }
 a:hover {
   color: #ffffff;
-  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -49,12 +48,12 @@ a.dark:hover {
 .tags {
   padding-left:460px;
   margin-left:-40px;
-  padding-top: 5px;
   margin-bottom:-5px;
-  font-size: 0.9em;
   background-color: #351e03;
   min-height: 10px;
-  transition: all 0.5s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 .tags.about {
   background: #c27a22;  
@@ -68,7 +67,6 @@ a.dark:hover {
   min-height: 200px;
   margin-top:-100px;
   padding-top: 100px;
-  transition: all 0.5s ease;
 }
 .under-slanted.about {
   background-color: #351e03;
@@ -79,6 +77,7 @@ a.dark:hover {
   font-size: 1.5em;
   display: inline-block;
   padding: 8px;
+  font-weight: normal;
 }
 
 .divider {

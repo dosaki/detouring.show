@@ -1,10 +1,9 @@
 .tag {
   margin:0 5px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: inline-block;
   padding: 8px;
   color: #c27a22;
-  font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   background: none;
