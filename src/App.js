@@ -61,7 +61,7 @@ function App() {
         { podcastInfo && (selectedPage === "" || selectedPage === "episodes") ? <Content info={podcastInfo} tag={selectedTag} /> : '' }
         { podcastInfo && selectedPage === "about" ? <About info={podcastInfo} /> : '' }
       </main>
-      <footer className="footer">
+      <footer className={`footer ${selectedPage}`}>
         &copy; detouring.show
       </footer>
     </div>
