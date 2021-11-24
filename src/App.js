@@ -53,11 +53,11 @@ function App() {
             <a href='https://twitter.com/DetouringShow' title="Twitter"><FontAwesomeIcon icon={faTwitter} /></a>
           </div>
         </div>
-        <div className="tags">
+        <div className={`tags ${selectedPage}`}>
           {podcastInfo && (selectedPage === "" || selectedPage === "episodes")  ? podcastInfo.allTags.map((tag, i) => <Tag key={i} tag={tag} isSelected={selectedTag === tag} onClick={tagClick} /> ) : ''}
         </div>
       </header>
-      <main className="under-slanted">
+      <main className={`under-slanted ${selectedPage}`}>
         { podcastInfo && (selectedPage === "" || selectedPage === "episodes") ? <Content info={podcastInfo} tag={selectedTag} /> : '' }
         { podcastInfo && selectedPage === "about" ? <About info={podcastInfo} /> : '' }
       </main>
