@@ -36,3 +36,10 @@
         5% 95%
       );
 }
+
+
+@media screen and (max-width: 615px) {
+  .host-info {
+    flex-direction: column;
+  }
+}

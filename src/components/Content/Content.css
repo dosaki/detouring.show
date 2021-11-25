@@ -21,3 +21,12 @@
 .content-holder .episodes > * {
   margin: 8px 8px;
 }
+
+@media screen and (max-width: 615px) {
+  .content-holder {
+    padding: 4px;
+  }
+  .content-holder .episodes > * {
+    margin: 8px 0px;
+  }
+}

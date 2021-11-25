@@ -99,7 +99,7 @@ a.dark:hover {
   clip-path: polygon(
       100% 0%,
       100% 100%,
-      50% 100%
+      calc(100% - 315px) 100%
   );
   margin-top: -55px;
   font-weight:bold;
@@ -112,7 +112,7 @@ a.dark:hover {
   clip-path: polygon(
       100% 0%,
       100% 100%,
-      56% 100%
+      calc(100% - 305px) 100%
   );
 }
 
@@ -120,13 +120,37 @@ a.dark:hover {
   background: #c27a22;
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 750px) {
+  .logo {
+    width: 300px;
+  }
+  .tags {
+    padding-left: 40px;
+    justify-content: center;
+  }
   .divider {
     display: none;
   }
   .links > a {
     margin:0 2px;
     font-size: 1.5em;
+    display: inline-block;
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .divider {
+    display: block;
+    height:0;
+    border-left: none;
+  }
+  .logo {
+    width: 175px;
+  }
+  .links > a {
+    margin:0 2px;
+    font-size: 1.2em;
     display: inline-block;
     padding: 4px;
   }
