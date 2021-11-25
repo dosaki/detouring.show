@@ -62,7 +62,9 @@ function App() {
         { podcastInfo && selectedPage === "about" ? <About info={podcastInfo} /> : '' }
       </main>
       <footer className={`footer ${selectedPage}`}>
-        &copy; detouring.show
+        <div className="footer-content">
+          &copy; detouring.show
+        </div>
       </footer>
     </div>
   );

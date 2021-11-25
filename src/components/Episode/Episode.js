@@ -1,11 +1,14 @@
 import './Episode.css';
+import './EpisodeCutVariations.css';
+import random from '../../utils/randomUtils';
 
 function Episode(props) {
   const style = {
     backgroundImage: `url(${props.info.image})`
   };
+  const variation = props.variation || random.pick(..."abcde".split(""));
   return (
-    <div className="episode">
+    <div className={`episode ${variation}`}>
       <div style={style} className="image-area">
         <div className="info-area">
           <h3>{props.info.title} - {props.info.date.toLocaleDateString()}</h3>

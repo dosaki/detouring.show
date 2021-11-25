@@ -86,30 +86,39 @@ a.dark:hover {
   border-left: 2px solid white;
 }
 
+.logo {
+  width: 420px;
+}
+
 .footer {
-  background: #131313;
+  background: #351e03;
   color: #ffffff;
   flex-shrink: 0;
-  padding: 8px;
-  padding-top:16px;
+  padding-top:10px;
   text-align: right;
   clip-path: polygon(
       100% 0%,
       100% 100%,
       50% 100%
   );
-  margin-top: -45px;
+  margin-top: -55px;
   font-weight:bold;
+}
+
+.footer-content {
+  padding: 8px;
+  padding-top:16px;
+  background: #131313;
+  clip-path: polygon(
+      100% 0%,
+      100% 100%,
+      56% 100%
+  );
 }
 
 .footer.about {
   background: #c27a22;
 }
-
-.logo {
-  width: 420px;
-}
-
 
 @media screen and (max-width: 615px) {
   .divider {

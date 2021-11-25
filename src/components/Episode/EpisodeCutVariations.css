@@ -1,0 +1,112 @@
+.episode.a {
+    clip-path: polygon(
+        0% 0%,
+        calc(100% - 80px) 2%,
+        100% 80px,
+        100% 96%,
+        10% 100%,
+        0% 100%
+    );
+}
+.episode.a:hover {
+    --notchSize: 50px;
+    clip-path: polygon(
+        0% 0%,
+        calc(100% - var(--notchSize)) 0%,
+        100% var(--notchSize),
+        100% 100%,
+        var(--notchSize) 95%,
+        0% calc(100% - var(--notchSize))
+    );
+}
+
+.episode.b {
+    clip-path: polygon(
+        1% 6%,
+        85% 0%,
+        100% 15%,
+        100% 100%,
+        50% 98%,
+        0% 95%
+    );
+}
+.episode.b:hover {
+    clip-path: polygon(
+        0% 5%,
+        65% 2%,
+        100% 15%,
+        100% 95%,
+        30% 100%,
+        2% 100%
+    );
+}
+
+
+.episode.c {
+    clip-path: polygon(
+        0% 6%,
+        20% 0%,
+        98% 0%,
+        100% 60%,
+        90% 100%,
+        6% 90%,
+        0% 80%
+    );
+}
+.episode.c:hover {
+    clip-path: polygon(
+        2% 0%,
+        50% 2%,
+        98% 10%,
+        100% 60%,
+        98% 98%,
+        1% 93%,
+        0% 90%
+    );
+}
+
+.episode.d {
+    clip-path: polygon(
+        0% 15%,
+        50% 0%,
+        98% 2%,
+        100% 15%,
+        98% 60%,
+        90% 100%,
+        2% 95%
+    );
+}
+.episode.d:hover {
+    clip-path: polygon(
+        0% 2%,
+        20% 0%,
+        90% 6%,
+        100% 15%,
+        100% 60%,
+        98% 93%,
+        0% 100%
+    );
+}
+
+.episode.e {
+    clip-path: polygon(
+        0% 6%,
+        6% 3%,
+        18% 0%,
+        100% 3%,
+        99% 90%,
+        55% 100%,
+        0% 96%
+    );
+}
+.episode.e:hover {
+    clip-path: polygon(
+        0% 6%,
+        7% 5%,
+        50% 0%,
+        95% 3%,
+        99% 98%,
+        35% 100%,
+        1% 95%
+    );
+}

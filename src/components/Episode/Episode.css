@@ -1,32 +1,7 @@
 .episode {
   margin-top: 30px;
   width: 400px;
-  
-  --notchSize: 80px;
-  --hoverNotchSize: 50px;
-  clip-path: 
-    polygon(
-      0% 0%,
-      calc(100% - var(--notchSize)) 2%,
-      100% var(--notchSize),
-      100% 100%,
-      var(--hoverNotchSize) 100%,
-      0% 100%
-    );
   transition: clip-path 0.2s ease;
-}
-
-.episode:hover {
-  --notchSize: 50px;
-  clip-path: 
-    polygon(
-      0% 0%,
-      calc(100% - var(--notchSize)) 0%,
-      100% var(--notchSize),
-      100% 100%,
-      var(--notchSize) 95%,
-      0% calc(100% - var(--notchSize))
-    );
 }
 
 .image-area {

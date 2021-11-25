@@ -1,5 +1,6 @@
 .content-holder {
   padding: 8px 32px;
+  padding-bottom: 45px;
 }
 
 .description {
@@ -11,9 +12,12 @@
   padding:0;
 }
 
-.episodes {
+.content-holder .episodes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   overflow: auto;
+}
+.content-holder .episodes > * {
+  margin: 8px 8px;
 }
