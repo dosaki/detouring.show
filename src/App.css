@@ -99,20 +99,20 @@ a.dark:hover {
   clip-path: polygon(
       100% 0%,
       100% 100%,
-      calc(100% - 315px) 100%
+      calc(100% - 335px) 100%
   );
-  margin-top: -55px;
+  margin-top: -63px;
   font-weight:bold;
 }
 
 .footer-content {
   padding: 8px;
-  padding-top:16px;
+  padding-top:24px;
   background: #131313;
   clip-path: polygon(
       100% 0%,
       100% 100%,
-      calc(100% - 305px) 100%
+      calc(100% - 285px) 100%
   );
 }
 

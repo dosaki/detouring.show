@@ -9,6 +9,7 @@
   background: none;
   border:none;
   outline: none;
+  line-height: 1em;
 }
 
 .tag:hover {
