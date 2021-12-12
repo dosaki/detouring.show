@@ -1,25 +1,25 @@
 const removeCDATA = (text) => {
     return text.replace(/^<!\[CDATA\[/, "").replace(/]]>$/, "");
-}
+};
 
 const validTags = {
     "Arts": ["#animation", "#film", "#art", "#music", "#illustration"],
-    "Business": ["#management", "#startup", "#administration", "#business", "#accounting"],
+    "Business": ["#management", "#startup", "#administration", "#business", "#accounting", "#recruitment"],
     "Design": ["#design", "#usability", "#ux"],
     "Food Industry": ["#chef", "#pastry", "#baking", "#baker", "#food", "#restaurant"],
     "Technology": ["#softwaredevelopment", "#technology", "#datascience"],
     "Medical": ["#doctor", "#medicine", "#medical", "#radiology", "#physiotherapy", "#psychology", "#neurology", "#photography"],
     "Science": ["#science", "#physics", "#chemistry", "#scientist"]
-}
+};
 
 const hasTag = (description, tag) => {
-    return validTags[tag].some(t => description.includes(tag));
-}
+    return validTags[tag].some(t => description.includes(t));
+};
 
 const extractTags = (description) => {
     const tags = Object.keys(validTags).filter(tag => hasTag(description, tag));
-    return tags.length === 0 ? ["Other"] : tags;
-}
+    return tags.length === 0 ? ["All", "Other"] : ["All", ...tags];
+};
 
 const parseItems = (items) => {
     return items.map((episode) => {
@@ -37,9 +37,9 @@ const parseItems = (items) => {
             image: episode.querySelector("image").getAttribute("href"),
             isExplicit: episode.querySelector("explicit").innerHTML.toLowerCase() === "no",
             tags: extractTags(description)
-        }
+        };
     });
-}
+};
 
 const parseRss = (rss) => {
     const parser = new DOMParser();
@@ -47,7 +47,7 @@ const parseRss = (rss) => {
     const errorNode = doc.querySelector("parsererror");
     if (errorNode) {
         console.error("error while parsing", errorNode, doc);
-        return null
+        return null;
     }
     const episodes = parseItems([...doc.querySelectorAll("channel > item")]);
     return {
@@ -57,8 +57,8 @@ const parseRss = (rss) => {
         author: removeCDATA(doc.querySelector("channel>author").innerHTML),
         email: doc.querySelector("channel > owner > email").innerHTML,
         episodes,
-        allTags: [...new Set(episodes.map(ep => ep.tags).flat())]
-    }
-}
+        allTags: [...[...new Set(episodes.map(ep => ep.tags).flat())].filter(t => t !== "Other").sort(), "Other"]
+    };
+};
 
 export default parseRss;
