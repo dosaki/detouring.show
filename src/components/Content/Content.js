@@ -4,7 +4,7 @@ import './Content.css';
 
 
 function Content(props) {
-  const sortedEpisodes = props.info.episodes.sort((a,b) => a.timestamp - b.timestamp);
+  const sortedEpisodes = props.info.episodes.sort((a,b) => b.timestamp - a.timestamp);
   const filteredEpisodes = props.tag ? sortedEpisodes.filter(ep => ep.tags.includes(props.tag)) : sortedEpisodes;
   return (
     <div className="content-holder">

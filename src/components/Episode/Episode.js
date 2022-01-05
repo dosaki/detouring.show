@@ -11,11 +11,14 @@ function Episode(props) {
     <div className={`episode ${variation}`}>
       <div style={style} className="image-area">
         <div className="info-area">
-          <h3>{props.info.title} - {props.info.date.toLocaleDateString()}</h3>
-          <audio controls>
+          <div className="info-title">
+            {props.info.date.toLocaleDateString()}
+            <h3>{props.info.title}</h3>
+          </div>
+          <audio controls className="player">
             <source src={props.info.audioFile} />
           </audio>
-          <div className="summary" dangerouslySetInnerHTML={{__html: props.info.description}}/>
+          <div className="summary" dangerouslySetInnerHTML={{ __html: props.info.description }} />
         </div>
       </div>
     </div>
