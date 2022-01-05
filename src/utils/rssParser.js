@@ -25,9 +25,14 @@ const parseItems = (items) => {
     return items.map((episode) => {
         const description = removeCDATA(episode.querySelector("description").innerHTML);
         const date = new Date(episode.querySelector("pubDate").innerHTML);
+        const tags = extractTags(description);
+        let descriptionText = description
+            .replace(new RegExp(`#.* `, "g"), "")
+            .replace(new RegExp(`#.*</p>`, "g"), "</p>")
+            .replace("<p></p>", "");
         return {
             title: removeCDATA(episode.querySelector("title").innerHTML),
-            description,
+            description: descriptionText,
             link: episode.querySelector("link").innerHTML,
             author: removeCDATA(episode.querySelector("creator").innerHTML),
             date,
@@ -36,7 +41,7 @@ const parseItems = (items) => {
             duration: episode.querySelector("duration").innerHTML,
             image: episode.querySelector("image").getAttribute("href"),
             isExplicit: episode.querySelector("explicit").innerHTML.toLowerCase() === "no",
-            tags: extractTags(description)
+            tags
         };
     });
 };
