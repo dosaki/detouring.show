@@ -7,9 +7,10 @@ const validTags = {
     "Business": ["#management", "#startup", "#administration", "#business", "#accounting", "#recruitment"],
     "Design": ["#design", "#usability", "#ux"],
     "Food Industry": ["#chef", "#pastry", "#baking", "#baker", "#food", "#restaurant"],
-    "Technology": ["#softwaredevelopment", "#technology", "#datascience"],
+    "Technology": ["#softwaredevelopment", "#technology", "#datascience", "#programming", "#code", "#software", "#robotics"],
     "Medical": ["#doctor", "#medicine", "#medical", "#radiology", "#physiotherapy", "#psychology", "#neurology", "#photography"],
-    "Science": ["#science", "#physics", "#chemistry", "#scientist"]
+    "Sales & Marketing": ["#marketing", "#sales"],
+    "Science": ["#science", "#physics", "#chemistry", "#scientist", "#astronomy"]
 };
 
 const hasTag = (description, tag) => {
