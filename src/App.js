@@ -6,7 +6,7 @@ import About from './components/About/About';
 import NavLink from './components/NavLink/NavLink';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faPatreon, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faRss } from '@fortawesome/free-solid-svg-icons';
 
 import logo from './logo.dark-theme.svg';
@@ -51,6 +51,7 @@ function App() {
             <a href={rssLink} title="rss feed"><FontAwesomeIcon icon={faRss} /></a>
             <a href='mailto:tiago@detouring.show' title="Email"><FontAwesomeIcon icon={faEnvelope} /></a>
             <a href='https://twitter.com/DetouringShow' title="Twitter"><FontAwesomeIcon icon={faTwitter} /></a>
+            {/* <a href='https://www.patreon.com/detouring' title="Twitter"><FontAwesomeIcon icon={faPatreon} /></a> */}
           </div>
         </div>
         <div className={`tags ${selectedPage}`}>
