@@ -6,8 +6,8 @@ import About from './components/About/About';
 import NavLink from './components/NavLink/NavLink';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPatreon, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faRss } from '@fortawesome/free-solid-svg-icons';
+import { faApple, faGoogle, faPatreon, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPodcast, faRss } from '@fortawesome/free-solid-svg-icons';
 
 import logo from './logo.dark-theme.svg';
 import './App.css';
@@ -49,6 +49,10 @@ function App() {
             <NavLink isSelected={selectedPage === "about"} to="about">about</NavLink>
             <span className="divider"></span>
             <a href={rssLink} title="rss feed"><FontAwesomeIcon icon={faRss} /></a>
+            <a href='https://open.spotify.com/show/2iQ72Khjj4d34F8KXKe3FC' title="Listen on Spotify"><FontAwesomeIcon icon={faSpotify} /></a>
+            <a href='https://podcasts.apple.com/us/podcast/detouring/id1606191602' title="Listen on Apple Podcasts"><FontAwesomeIcon icon={faApple} /></a>
+            <a href='https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy83NTk1NDQzOC9wb2RjYXN0L3Jzcw' title="Listen on Google Podcasts"><FontAwesomeIcon icon={faGoogle} /></a>
+            <span className="divider"></span>
             <a href='mailto:tiago@detouring.show' title="Email"><FontAwesomeIcon icon={faEnvelope} /></a>
             <a href='https://twitter.com/DetouringShow' title="Twitter"><FontAwesomeIcon icon={faTwitter} /></a>
             {/* <a href='https://www.patreon.com/detouring' title="Twitter"><FontAwesomeIcon icon={faPatreon} /></a> */}
