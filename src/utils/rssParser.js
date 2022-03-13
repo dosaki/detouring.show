@@ -4,7 +4,7 @@ const removeCDATA = (text) => {
 
 const validTags = {
     "Arts": ["#animation", "#film", "#art", "#music", "#illustration"],
-    "Business": ["#management", "#startup", "#administration", "#business", "#accounting", "#recruitment"],
+    "Business": ["#management", "#startup", "#administration", "#business", "#accounting", "#recruitment", "#finance"],
     "Design": ["#design", "#usability", "#ux"],
     "Education": ["#education", "#teaching", "#teaching"],
     "Food Industry": ["#chef", "#pastry", "#baking", "#baker", "#food", "#restaurant"],

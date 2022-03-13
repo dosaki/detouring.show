@@ -29,4 +29,7 @@
   .content-holder .episodes > * {
     margin: 8px 0px;
   }
+  .description {
+    font-size: 1em;
+  }
 }
