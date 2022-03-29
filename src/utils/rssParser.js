@@ -3,16 +3,19 @@ const removeCDATA = (text) => {
 };
 
 const validTags = {
-    "Arts": ["#animation", "#film", "#art", "#music", "#illustration"],
+    "Arts": ["#animation", "#film", "#art", "#music", "#illustration", "#theatre", "#opera"],
     "Business": ["#management", "#startup", "#administration", "#business", "#accounting", "#recruitment", "#finance"],
+    "Charity": ["#charity", "#missions"],
     "Design": ["#design", "#usability", "#ux"],
-    "Education": ["#education", "#teaching", "#teaching"],
+    "Education": ["#education", "#teaching", "#teacher"],
     "Food Industry": ["#chef", "#pastry", "#baking", "#baker", "#food", "#restaurant"],
-    "Politics": ["#politics"],
-    "Technology": ["#softwaredevelopment", "#technology", "#datascience", "#programming", "#code", "#software", "#robotics"],
+    "Games": ["#boardgames", "#gamedesign", "#gamedeveloper", "#gamedev"],
     "Medical": ["#doctor", "#medicine", "#medical", "#radiology", "#physiotherapy", "#psychology", "#neurology", "#photography"],
     "Sales & Marketing": ["#marketing", "#sales"],
-    "Science": ["#science", "#physics", "#chemistry", "#scientist", "#astronomy"]
+    "Science": ["#science", "#physics", "#chemistry", "#scientist", "#astronomy"],
+    "Sports": ["#sports", "#football", "#nfl", "#basketball"],
+    "Politics": ["#politics"],
+    "Technology": ["#softwaredevelopment", "#technology", "#datascience", "#programming", "#code", "#software", "#robotics"],
 };
 
 const hasTag = (description, tag) => {
