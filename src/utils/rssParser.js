@@ -2,13 +2,15 @@ const removeCDATA = (text) => {
     return text.replace(/^<!\[CDATA\[/, "").replace(/]]>$/, "");
 };
 
+const artsAndEntertainment = ["#film", "#music", "#theatre", "#opera"]
+
 const validTags = {
-    "Arts": ["#animation", "#film", "#art", "#music", "#illustration", "#theatre", "#opera"],
+    "Arts": ["#art", "#animation", "#illustration", ...artsAndEntertainment],
     "Business": ["#management", "#startup", "#administration", "#business", "#accounting", "#recruitment", "#finance"],
     "Charity": ["#charity", "#missions"],
     "Design": ["#design", "#usability", "#ux"],
     "Education": ["#education", "#teaching", "#teacher"],
-    "Entertainment": ["#podcast", "#music", "#teacher"],
+    "Entertainment": ["#podcast", ...artsAndEntertainment],
     "Food Industry": ["#chef", "#pastry", "#baking", "#baker", "#food", "#restaurant"],
     "Games": ["#boardgames", "#gamedesign", "#gamedeveloper", "#gamedev", "#boardgamedesign"],
     "Medical": ["#doctor", "#medicine", "#medical", "#radiology", "#physiotherapy", "#psychology", "#neurology", "#photography"],

@@ -45,6 +45,10 @@ a.dark:hover {
   align-items: flex-end;
 }
 
+a.nav-selected {
+  color: white;
+}
+
 .tags {
   padding-left:40px;
   margin-left:-40px;
