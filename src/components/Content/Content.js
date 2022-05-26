@@ -7,7 +7,6 @@ import './Content.css';
 
 function Content(props) {
   const [store, dispatch] = useContext(Context);
-  console.log(store);
   if(!store.podcastInfo){
     return "..."
   }

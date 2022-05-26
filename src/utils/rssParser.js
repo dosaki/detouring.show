@@ -35,13 +35,18 @@ const parseItems = (items) => {
         const description = removeCDATA(episode.querySelector("description").innerHTML);
         const date = new Date(episode.querySelector("pubDate").innerHTML);
         const tags = extractTags(description);
-        let descriptionText = description
+        let parsedDescription = (description||"")
             .replace(new RegExp(`#.* `, "g"), "")
             .replace(new RegExp(`#.*</p>`, "g"), "</p>")
-            .replace("<p></p>", "");
+            .replace("<p></p>", "")
+            .split("<p>----</p>");
+        const descriptionText = parsedDescription[0]
+        const moreInformation = parsedDescription.length > 1 ? parsedDescription[1] : null;
+
         return {
             title: removeCDATA(episode.querySelector("title").innerHTML),
             description: descriptionText,
+            moreInformation,
             link: episode.querySelector("link").innerHTML,
             author: removeCDATA(episode.querySelector("creator").innerHTML),
             date,
