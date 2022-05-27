@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import parseRss from './utils/rssParser';
 import Tag from './components/Tag/Tag';
 
@@ -15,12 +15,8 @@ function App() {
   const rssLink = "https://anchor.fm/s/75954438/podcast/rss";
   const [store, dispatch] = useContext(Context);
   const location = useLocation();
-  const selectedPage = location.pathname.slice(1);
-
-  // const reloadSelectedPage = () => {
-  //   setSelectedPage(window.location.hash.replace("#", ""));
-  // }
-  // window.onhashchange = reloadSelectedPage;
+  const currentPath = location.pathname.slice(1);
+  const selectedPage = currentPath.includes("episode/") ? "episode-details" : currentPath;
 
   useEffect(() => {
     async function getPodcastInfo() {

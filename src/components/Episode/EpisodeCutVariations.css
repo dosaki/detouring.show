@@ -1,3 +1,9 @@
+.cut,
+.episode {
+  transition: clip-path 0.2s ease;
+}
+
+.cut.a,
 .episode.a {
     clip-path: polygon(
         0% 0%,
@@ -8,6 +14,7 @@
         0% 100%
     );
 }
+.cut.a:hover,
 .episode.a:hover {
     --notchSize: 50px;
     clip-path: polygon(
@@ -20,6 +27,7 @@
     );
 }
 
+.cut.b,
 .episode.b {
     clip-path: polygon(
         1% 6%,
@@ -30,6 +38,7 @@
         0% 95%
     );
 }
+.cut.b:hover,
 .episode.b:hover {
     clip-path: polygon(
         0% 5%,
@@ -42,6 +51,7 @@
 }
 
 
+.cut.c,
 .episode.c {
     clip-path: polygon(
         0% 6%,
@@ -53,6 +63,7 @@
         0% 80%
     );
 }
+.cut.c:hover,
 .episode.c:hover {
     clip-path: polygon(
         2% 0%,
@@ -65,6 +76,7 @@
     );
 }
 
+.cut.d,
 .episode.d {
     clip-path: polygon(
         0% 8%,
@@ -76,6 +88,7 @@
         2% 95%
     );
 }
+.cut.d:hover,
 .episode.d:hover {
     clip-path: polygon(
         0% 2%,
@@ -88,6 +101,7 @@
     );
 }
 
+.cut.e,
 .episode.e {
     clip-path: polygon(
         0% 6%,
@@ -99,6 +113,7 @@
         0% 96%
     );
 }
+.cut.e:hover,
 .episode.e:hover {
     clip-path: polygon(
         0% 6%,

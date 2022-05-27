@@ -47,6 +47,7 @@ const parseItems = (items) => {
             title: removeCDATA(episode.querySelector("title").innerHTML),
             description: descriptionText,
             moreInformation,
+            id:`${episode.querySelector("season").innerHTML}-${(episode.querySelector("episode")||"").innerHTML || 0}`,
             link: episode.querySelector("link").innerHTML,
             author: removeCDATA(episode.querySelector("creator").innerHTML),
             date,

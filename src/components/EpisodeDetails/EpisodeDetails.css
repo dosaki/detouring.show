@@ -1,0 +1,20 @@
+.episode-details-holder {
+    padding: 8px 32px;
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+.episode-details-image {
+    width: 400px;
+    height: 400px;
+}
+.episode-details-content {
+    display: flex;
+}
+.episode-details-info {
+    margin-left: 16px;
+}
+.episode-details-player {
+    width: 100%;
+    opacity: 0.8;
+}
