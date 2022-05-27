@@ -3,11 +3,6 @@
   width: 432px;
   height: 432px;
 }
-
-a.episode {
-  text-decoration: none;
-}
-
 .image-area {
   overflow: hidden;
   background-position: center;
@@ -50,6 +45,7 @@ a.episode {
 .episode .more {
   font-size: 1em;
 }
+
 
 @media screen and (max-width: 400px) {
   .episode {

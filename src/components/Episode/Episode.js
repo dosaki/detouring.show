@@ -14,7 +14,7 @@ function Episode({info, variation}) {
         <div className="info-area">
           <div className="info-title">
             {info.date.toLocaleDateString()}
-            <h3><Link to={`/episode/${info.id}`}>{info.title}</Link></h3>
+            <h3><Link className='white-link' to={`/episode/${info.id}`}>{info.title}</Link></h3>
           </div>
           <audio controls className="player">
             <source src={info.audioFile} />

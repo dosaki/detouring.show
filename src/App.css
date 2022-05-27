@@ -16,6 +16,9 @@ a.dark {
 a.dark:hover {
   text-decoration: none;
 }
+a.white-link {
+  color: #ffffff
+}
 
 .app {
   background: #c27a22;
