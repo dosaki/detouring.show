@@ -18,3 +18,13 @@
     width: 100%;
     opacity: 0.8;
 }
+
+@media screen and (max-width: 500px) {
+    .episode-details-content {
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    .episode-details-image {
+        margin-bottom: 16px;
+    }
+  }
