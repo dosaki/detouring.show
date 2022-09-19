@@ -16,6 +16,9 @@ a.dark {
 a.dark:hover {
   text-decoration: none;
 }
+a.white-link {
+  color: #ffffff
+}
 
 .app {
   background: #c27a22;
@@ -59,7 +62,8 @@ a.nav-selected {
   flex-wrap: wrap;
   justify-content: left;
 }
-.tags.about {
+.tags.about,
+.tags.episode-details {
   background: #c27a22;  
 }
 
@@ -72,7 +76,8 @@ a.nav-selected {
   margin-top:-100px;
   padding-top: 100px;
 }
-.under-slanted.about {
+.under-slanted.about,
+.under-slanted.episode-details {
   background-color: #351e03;
 }
 
@@ -120,7 +125,8 @@ a.nav-selected {
   );
 }
 
-.footer.about {
+.footer.about,
+.footer.episode-details {
   background: #c27a22;
 }
 

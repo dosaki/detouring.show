@@ -5,9 +5,8 @@ import Episode from '../Episode/Episode';
 import './Content.css';
 
 
-function Content(props) {
-  const [store, dispatch] = useContext(Context);
-  console.log(store);
+function Content() {
+  const [store] = useContext(Context);
   if(!store.podcastInfo){
     return "..."
   }

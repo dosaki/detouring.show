@@ -2,9 +2,7 @@
   margin-top: 30px;
   width: 432px;
   height: 432px;
-  transition: clip-path 0.2s ease;
 }
-
 .image-area {
   overflow: hidden;
   background-position: center;
@@ -43,6 +41,11 @@
   font-size: 0.95em;
   padding: 16px;
 }
+
+.episode .more {
+  font-size: 1em;
+}
+
 
 @media screen and (max-width: 400px) {
   .episode {
