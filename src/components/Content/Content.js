@@ -14,7 +14,7 @@ function Content() {
   const filteredEpisodes = store.selectedTag ? sortedEpisodes.filter(ep => ep.tags.includes(store.selectedTag)) : sortedEpisodes;
   return (
     <div className="content-holder">
-      <h2 className="description">{store.podcastInfo.description}</h2>
+      {store.podcastInfo.description.split("\n").map(text => <h2 className="description">{text}</h2>)}
       <div className="episodes">
         {filteredEpisodes.map((episode, i) => <Episode key={i} info={episode}/>)}
       </div>
