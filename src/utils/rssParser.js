@@ -49,6 +49,8 @@ const parseItems = (items) => {
             audioFile: episode.querySelector("enclosure").getAttribute("url"),
             duration: episode.querySelector("duration").innerHTML,
             image: episode.querySelector("image").getAttribute("href"),
+            episodeNumber: episode.querySelector("episode")?.innerHTML || 0,
+            seasonNumber: episode.querySelector("season")?.innerHTML || 0,
             isExplicit: episode.querySelector("explicit").innerHTML.toLowerCase() === "no",
             tags
         };

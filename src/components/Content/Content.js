@@ -11,7 +11,7 @@ function Content(props) {
   if(!store.podcastInfo){
     return "..."
   }
-  const sortedEpisodes = store.podcastInfo.episodes.sort((a,b) => b.timestamp - a.timestamp);
+  const sortedEpisodes = store.podcastInfo.episodes.sort((a,b) => Number(`${b.seasonNumber}${b.episodeNumber}`) - Number(`${a.seasonNumber}${a.episodeNumber}`));
   const filteredEpisodes = store.selectedTag ? sortedEpisodes.filter(ep => ep.tags.includes(store.selectedTag)) : sortedEpisodes;
   return (
     <div className="content-holder">
