@@ -5,7 +5,7 @@ const removeCDATA = (text) => {
 const artsAndEntertainment = ["#film", "#music", "#theatre", "#opera"]
 
 const validTags = {
-    "Arts": ["#art", "#animation", "#illustration", ...artsAndEntertainment],
+    "Arts": ["#art", "#animation", "#illustration", "#photography", ...artsAndEntertainment],
     "Business": ["#management", "#startup", "#administration", "#business", "#accounting", "#recruitment", "#finance"],
     "Charity": ["#charity", "#missions"],
     "Design": ["#design", "#usability", "#ux"],
@@ -13,7 +13,7 @@ const validTags = {
     "Entertainment": ["#podcast", ...artsAndEntertainment],
     "Food Industry": ["#chef", "#pastry", "#baking", "#baker", "#food", "#restaurant"],
     "Games": ["#boardgames", "#gamedesign", "#gamedeveloper", "#gamedev", "#boardgamedesign"],
-    "Medical": ["#doctor", "#medicine", "#medical", "#radiology", "#physiotherapy", "#psychology", "#neurology", "#photography"],
+    "Medical": ["#doctor", "#medicine", "#medical", "#radiology", "#physiotherapy", "#psychology", "#neurology"],
     "Sales & Marketing": ["#marketing", "#sales"],
     "Science": ["#science", "#physics", "#chemistry", "#scientist", "#astronomy"],
     "Sports": ["#sports", "#football", "#nfl", "#basketball"],
