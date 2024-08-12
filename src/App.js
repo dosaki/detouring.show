@@ -3,8 +3,8 @@ import parseRss from './utils/rssParser';
 import Tag from './components/Tag/Tag';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple, faGoogle, faPatreon, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPodcast, faRss } from '@fortawesome/free-solid-svg-icons';
+import { faApple, faGoogle, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faRss } from '@fortawesome/free-solid-svg-icons';
 
 import logo from './logo.dark-theme.svg';
 import './App.css';
