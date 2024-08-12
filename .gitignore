@@ -23,5 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 
-publish.sh
 ./images
+/terraform/.terraform
+/terraform/.terraform.lock.hcl
+.idea
